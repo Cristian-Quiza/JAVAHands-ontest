@@ -1,0 +1,31 @@
+<div class="container">
+    <div class ="card">
+       <h3 class="text-center"> Employee List </h3> 
+        <div class="card-body">
+            <table class="table table-striped">
+                <thead>
+                    <th>Id</th>
+                    <th> Name</th>
+                    <th> Contract Type Name</th>
+                    <th> Role Id </th>
+                    <th> Role Name </th>
+                    <th> role Description </th>
+                    <th> Hourly Salary </th>
+                    <th> Monthly Salary </th>
+                 </thead>
+                <tbody>
+                    <tr *ngFor = "let employee of employees">
+                        <td> {{ employee.id}}</td>
+                        <td> {{ employee.name}}</td>
+                        <td> {{ employee.contractTypeName}}</td>
+                        <td> {{ employee.roleId}}</td>
+                        <td> {{ employee.roleName}}</td>
+                        <td> {{ employee.roleDescription}}</td>
+                        <td> {{ employee.hourlySalary}}</td>
+                        <td> {{ employee.monthlySalary}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
